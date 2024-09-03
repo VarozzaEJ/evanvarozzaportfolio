@@ -39,12 +39,11 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
       damping: 17,
       mass: 2,
     },
-  }" class="overflow-scroll h-screen w-screen md:px-12  lg:px-24 grid lg:grid-cols-2 grid-cols-1 selection:bg-cyan-300 text-white
+  }" class=" h-screen w-screen md:px-12 px-4 lg:px-24 lg:flex selection:bg-cyan-300 text-white
     selection:text-cyan-900 lg:gap-4 tracking-wide">
-    <div
-      class=" lg:px-15  lg:top-0 lg:overflow-scroll lg:sticky mx-8 lg:pt-20 pt-10 flex flex-col justify-center lg:justify-between">
+    <div class=" lg:px-15 lg:sticky lg:top-0 w-full lg:h-10 lg:pt-20 lg:pb-20 pb-0 pt-10 ">
 
-      <div class="h-40 lg:h-100">
+      <div class="h-40 lg:h-auto">
         <section class=" text-5xl mb-5 font-bold">
           <div class="">
             <p class="text-slate-200 cursor-pointer">
@@ -63,10 +62,10 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
               class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
               class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
           </a>
-          <a class="group flex items-center py-3 active" href="#experience"><span
+          <!-- <a class="group flex items-center py-3 active" href="#experience"><span
               class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
               class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span>
-          </a>
+          </a> -->
           <a class="group flex items-center py-3 active" href="#projects"><span
               class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
               class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
@@ -99,7 +98,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
         </div>
       </section>
     </div>
-    <div class="  scroll-smooth text-slate-400 mx-8 lg:mx-0  lg:pt-20 pt-10">
+    <div class="   text-slate-400 mx-0 lg:mx-0  lg:pt-20 pt-10">
       <p class="lg:hidden text-slate-100 mb-5">About</p>
       <p id="about" class="md:mb-8 mb-7">Hello! I’m Evan Varozza, a passionate software developer with a knack for
         crafting
@@ -136,70 +135,9 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
         </span>
         . Let’s build something amazing together!
       </p>
-      <div class="lg:px-15 mt-20" id="experience">
-        <p class="lg:hidden text-slate-100 mb-5">Experience</p>
-        <div
-          class="flex mb-4 px-6 py-2 hover:bg-slate-50/10 lg:cursor-pointer flex-col rounded-lg bg-slate-900 text-surface  shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl md:flex-row">
-          <p class="text-slate-400 ps-6 lg:ps-0">August 2024</p>
-          <div class="flex flex-col justify-start p-6">
-            <h5 class="mb-2 text-xl font-medium cursor-pointer hover:text-purple-400">Card title</h5>
-            <p class="mb-4 text-base">
-              This is a wider card with supporting text below as a natural lead-in
-              to additional content. This content is a little bit longer.
-            </p>
-            <p class="text-xs text-surface/75 dark:text-neutral-300">
-              Last updated 3 mins ago
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex hover:bg-slate-50/10 lg:cursor-pointer flex-col rounded-lg bg-slate-900 text-surface  shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl md:flex-row">
-          <p class="text-slate-400 ps-6 lg:ps-0">August 2024</p>
-          <div class="flex flex-col justify-start p-6">
-            <h5 class="mb-2 flex text-xl font-medium cursor-pointer hover:text-purple-400">Card title
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-4 mt-1 ms-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-              </svg>
-            </h5>
-            <p class="mb-4 text-base">
-              This is a wider card with supporting text below as a natural lead-in
-              to additional content. This content is a little bit longer.
-            </p>
-            <p class="text-xs text-surface/75 dark:text-neutral-300">
-              Last updated 3 mins ago
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex hover:bg-slate-50/10 lg:cursor-pointer flex-col rounded-lg bg-slate-900 text-surface  shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl md:flex-row">
-          <p class="text-slate-400 ps-6 lg:ps-0">August 2024</p>
-          <div class="flex flex-col justify-start p-6">
-            <h5 class="mb-2 text-xl font-medium cursor-pointer hover:text-purple-400">Card title</h5>
-            <p class="mb-4 text-base">
-              This is a wider card with supporting text below as a natural lead-in
-              to additional content. This content is a little bit longer.
-            </p>
-            <p class="text-xs text-surface/75 dark:text-neutral-300">
-              Last updated 3 mins ago
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex hover:bg-slate-50/10 lg:cursor-pointer flex-col rounded-lg bg-slate-900 text-surface  shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl md:flex-row">
-          <p class="text-slate-400 ps-6 lg:ps-0">August 2024</p>
-          <div class="flex flex-col justify-start p-6">
-            <h5 class="mb-2 text-xl font-medium cursor-pointer hover:text-purple-400">Card title</h5>
-            <p class="mb-4 text-base">
-              This is a wider card with supporting text below as a natural lead-in
-              to additional content. This content is a little bit longer.
-            </p>
-            <p class="text-xs text-surface/75 dark:text-neutral-300">
-              Last updated 3 mins ago
-            </p>
-          </div>
-        </div>
-        <div v-motion :initial="{
+      <div class="lg:px-15 mt-20">
+        <!-- <p id="experience" class="lg:hidden text-slate-100 mb-5">Experience</p> -->
+        <!-- <div v-motion :initial="{
           opacity: 0,
           y: 100,
         }" :visible="{
@@ -218,7 +156,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
               Last updated 3 mins ago
             </p>
           </div>
-        </div>
+        </div> -->
         <p class="lg:hidden text-slate-100 my-5">Projects</p>
         <div id="projects" class="">
           <ol class="">
@@ -231,10 +169,10 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none   lg:cursor-pointer gap-4 grid-cols-2 flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none   lg:cursor-pointer gap-4 grid-cols-2 flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
                 <img class=" h-40 lg:h-16 lg:pe-3 lg:w-36 w-52 pb-3 lg:pb-0"
-                  src="https://images.unsplash.com/photo-1576158113928-4c240eaaf360?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280336417490210897/Screenshot_2024-08-29_at_11.55.46_PM.png?ex=66d7b5b5&is=66d66435&hm=7153dfbb6ec816328d38cf2cec3018206ac282402369d9dbadb825e58afdc698&"
                   alt="">
                 <div class="flex flex-col w-5/6">
                   <p class="flex">Keepr <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -305,10 +243,6 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
 </template>
 
 <style scoped>
-.smooth {
-  scroll-behavior: smooth;
-}
-
 .card {
   display: flex;
   justify-content: space-around;
