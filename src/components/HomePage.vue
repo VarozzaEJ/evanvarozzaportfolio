@@ -59,15 +59,15 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
           <p class="w-64">I build responsive, accessible, back and front-end websites.</p>
         </div>
         <div class="flex flex-col invisible lg:visible">
-          <a class="group flex items-center py-3 active" href="#about"><span
+          <a class="group flex items-center py-3 " href="#about"><span
               class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
               class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
           </a>
-          <!-- <a class="group flex items-center py-3 active" href="#experience"><span
+          <!-- <a class="group flex items-center py-3 " href="#experience"><span
               class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
               class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span>
           </a> -->
-          <a class="group flex items-center py-3 active" href="#projects"><span
+          <a class="group flex items-center py-3 " href="#projects"><span
               class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
               class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
           </a>
@@ -130,9 +130,17 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
       </p>
       <p>
         Feel free to explore, and if you have any questions or opportunities for collaboration, don’t hesitate to
-        <span class="text-slate-100 hover:text-purple-400 cursor-pointer">
+        <span class="">
           reach
-          out
+          out through
+          <a href="https://www.linkedin.com/in/evan-varozza-521b78293/"
+            class="cursor-pointer text-slate-100 hover:text-purple-400">
+            linkedin
+          </a>
+          or an email to
+          <a href="mailto:VarozzaEJ@gmail.com" class="cursor-pointer text-slate-100 hover:text-purple-400">
+            VarozzaEJ@gmail.com
+          </a>
         </span>
         . Let’s build something amazing together!
       </p>
@@ -349,7 +357,12 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
               class="font-medium text-slate-400 hover:text-purple-400 focus-visible:text-purple-400">
               Tailwind CSS
             </a>
-            , deployed with Github Pages. All text is set in the
+            , deployed with
+            <a href="https://vercel.com/" aria-label="vercel (opens in new tab)" target="_blank"
+              class="font-medium text-slate-400 hover:text-purple-400 focus-visible:text-purple-400">
+              Vercel
+            </a>
+            . All text is set in the
             <a href="https://rsms.me/inter/"
               class="font-medium text-slate-400 hover:text-purple-400 focus-visible:text-purple-400"
               aria-label="inter typeface (opens in new tab)" target="_blank">
