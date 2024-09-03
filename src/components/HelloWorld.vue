@@ -169,17 +169,20 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none   lg:cursor-pointer gap-4 grid-cols-2 flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4 grid-cols-2 flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
                 <img class=" h-40 lg:h-16 lg:pe-3 lg:w-36 w-52 pb-3 lg:pb-0"
                   src="https://cdn.discordapp.com/attachments/1130957592240332851/1280336417490210897/Screenshot_2024-08-29_at_11.55.46_PM.png?ex=66d7b5b5&is=66d66435&hm=7153dfbb6ec816328d38cf2cec3018206ac282402369d9dbadb825e58afdc698&"
                   alt="">
                 <div class="flex flex-col w-5/6">
-                  <p class="flex">Keepr <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                      stroke-width="1.5" stroke="currentColor"
-                      class="size-4 mt-1 ms-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                    </svg></p>
+                  <a class="lg:cursor-pointer" href="https://keepr.evanvarozza.dev/#/">
+                    <p class="flex mt-2">Keepr <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor"
+                        class="size-4 mt-1 ms-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg></p>
+                  </a>
                   <p class="text-slate-400">Keepr is a social site where you post "keeps" and save them into "vaults".
                     Made
                     using a c# backend and vue front end, this app incorporates data manipulation using MySQL and
@@ -205,29 +208,111 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm  hover:blur-none  lg:cursor-pointer gap-4 grid-cols-2 flex-col-reverse ps-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white md:max-w-xl lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4 grid-cols-2 flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
                 <img class=" h-40 lg:h-16 lg:pe-3 lg:w-36 w-52 pb-3 lg:pb-0"
-                  src="https://images.unsplash.com/photo-1576158113928-4c240eaaf360?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280375898155126784/Screenshot_2024-09-02_at_9.55.52_PM.png?ex=66d7da7a&is=66d688fa&hm=11484f113e48d95cbde797784ea4451f5aafe121b12da07cc5a99413469da105&"
                   alt="">
                 <div class="flex flex-col w-5/6">
-                  <p class="flex">Keepr <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                      stroke-width="1.5" stroke="currentColor"
-                      class="size-4 mt-1 ms-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                    </svg></p>
-                  <p class="text-slate-400">Keepr is a social site where you post "keeps" and save them into "vaults".
-                    Made
-                    using a c# backend and vue front end, this app incorporates data manipulation using MySQL and
-                    Dapper.
+                  <a class="lg:cursor-pointer" href="https://varozzaej.github.io/jot/">
+                    <p class="flex mt-2">Jot<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor"
+                        class="size-4 mt-1 ms-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg></p>
+                  </a>
+                  <p class="text-slate-400">
+                    Jot is your go-to note-taking platform for capturing ideas and staying organized. With its clean,
+                    easy-to-navigate design, you can swiftly jot down thoughts, create structured notes, and manage
+                    tasks. Simplify your workflow and keep your ideas in check with Jot—where clarity meets convenience.
+                  </p>
+                  <div class="flex my-3">
+                    <span
+                      class="bg-green-100  text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-22">Javascript</span>
+                    <span
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-12">CSS</span>
+                    <span
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-15">HTML</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li v-motion :initial="{
+              opacity: 0,
+              y: 100,
+            }" :visible="{
+              opacity: 1,
+              y: 0,
+            }">
+
+              <div
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm  hover:blur-none   gap-4 grid-cols-2 flex-col-reverse ps-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white md:max-w-xl lg:flex-row">
+
+                <img class=" h-40 lg:h-16 lg:pe-3 lg:w-36 w-52 pb-3 lg:pb-0"
+                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280376292600184882/Screenshot_2024-09-02_at_9.58.04_PM.png?ex=66d7dad8&is=66d68958&hm=c56f14c415368717c5cb12863739b1af88a2b613b4ec087067506756e4959841&"
+                  alt="">
+                <div class="flex flex-col w-5/6">
+                  <a class="lg:cursor-pointer" href="https://boisepetworks.org/#/">
+
+                    <p class="flex mt-2">Petworks<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor"
+                        class="size-4 mt-1 ms-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg></p>
+                  </a>
+                  <p class="text-slate-400">Petworks is the perfect place for pet lovers to create profiles for their
+                    pets, share updates and photos, and connect with other pet enthusiasts. Celebrate your pets and join
+                    a community that’s as passionate about animals as you are!
                   </p>
                   <div class="flex my-3">
                     <span
                       class="bg-green-100  text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-11">Vue</span>
                     <span
-                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-8">c#</span>
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-18">NodeJS</span>
                     <span
-                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-15">MySQL</span>
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-15">MongoDB</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li v-motion :initial="{
+              opacity: 0,
+              y: 100,
+            }" :visible="{
+              opacity: 1,
+              y: 0,
+            }">
+
+              <div
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm  hover:blur-none   gap-4 grid-cols-2 flex-col-reverse ps-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white md:max-w-xl lg:flex-row">
+
+                <img class=" h-40 lg:h-16 lg:pe-3 lg:w-36 w-52 pb-3 lg:pb-0"
+                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280375899010629704/Screenshot_2024-09-02_at_9.56.11_PM.png?ex=66d7da7a&is=66d688fa&hm=f782e99b6ab1a5b6d6190eeb1ab2b742747fb47e19cae7f3e2f989a47bd00c14&"
+                  alt="">
+                <div class="flex flex-col w-5/6">
+                  <a class="lg:cursor-pointer" href="https://varozzaej.github.io/">
+
+                    <p class="flex mt-2">Balloon Pop<svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="size-4 mt-1 ms-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg></p>
+                  </a>
+                  <p class="text-slate-400">Balloon Pop is a fast-paced, addictive web app where the goal is simple: pop
+                    as many balloons as you can before time runs out! Test your reflexes and see how quickly you can
+                    burst colorful balloons in this fun and challenging game. Perfect for quick breaks or competitive
+                    fun with friends—can you top the leaderboard?
+                  </p>
+                  <div class="flex my-3">
+                    <span
+                      class="bg-green-100  text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-22">Javascript</span>
+                    <span
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-12">CSS</span>
+                    <span
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-15">HTML</span>
                   </div>
                 </div>
               </div>
