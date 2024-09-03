@@ -16,8 +16,9 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
 
 <template>
 
+
   <div
-    class="absolute bg-purple-700/15 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none max-md:hidden blur-3xl "
+    class="absolute bg-purple-700/15 rounded-full -translate-x-1/2 -translate-y-1/2 max-md:hidden pointer-events-none blur-3xl "
     :style="{
       left: x + `px`,
       top: y + `px`,
@@ -169,12 +170,12 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4 grid-cols-2 flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4 grid-cols-2 max-w-full flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
                 <img class=" h-40 lg:h-16 lg:pe-3 lg:w-36 w-52 pb-3 lg:pb-0"
                   src="https://cdn.discordapp.com/attachments/1130957592240332851/1280336417490210897/Screenshot_2024-08-29_at_11.55.46_PM.png?ex=66d7b5b5&is=66d66435&hm=7153dfbb6ec816328d38cf2cec3018206ac282402369d9dbadb825e58afdc698&"
                   alt="">
-                <div class="flex flex-col w-5/6">
+                <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://keepr.evanvarozza.dev/#/">
                     <p class="flex mt-2">Keepr <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor"
@@ -183,7 +184,8 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
                           d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                       </svg></p>
                   </a>
-                  <p class="text-slate-400">Keepr is a social site where you post "keeps" and save them into "vaults".
+                  <p class="text-slate-400 pe-1">Keepr is a social site where you post "keeps" and save them into
+                    "vaults".
                     Made
                     using a c# backend and vue front end, this app incorporates data manipulation using MySQL and
                     Dapper.
@@ -222,7 +224,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
                           d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                       </svg></p>
                   </a>
-                  <p class="text-slate-400">
+                  <p class="text-slate-400 pe-2">
                     Jot is your go-to note-taking platform for capturing ideas and staying organized. With its clean,
                     easy-to-navigate design, you can swiftly jot down thoughts, create structured notes, and manage
                     tasks. Simplify your workflow and keep your ideas in check with Jot—where clarity meets convenience.
@@ -262,7 +264,8 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
                           d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                       </svg></p>
                   </a>
-                  <p class="text-slate-400">Petworks is the perfect place for pet lovers to create profiles for their
+                  <p class="text-slate-400 pe-2">Petworks is the perfect place for pet lovers to create profiles for
+                    their
                     pets, share updates and photos, and connect with other pet enthusiasts. Celebrate your pets and join
                     a community that’s as passionate about animals as you are!
                   </p>
@@ -301,7 +304,8 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
                           d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                       </svg></p>
                   </a>
-                  <p class="text-slate-400">Balloon Pop is a fast-paced, addictive web app where the goal is simple: pop
+                  <p class="text-slate-400 pe-2">Balloon Pop is a fast-paced, addictive web app where the goal is
+                    simple: pop
                     as many balloons as you can before time runs out! Test your reflexes and see how quickly you can
                     burst colorful balloons in this fun and challenging game. Perfect for quick breaks or competitive
                     fun with friends—can you top the leaderboard?
@@ -321,6 +325,38 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
           </ol>
 
         </div>
+        <footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+          <span class="">Loosely designed in
+            <a href="https://figma.com"
+              class="font-medium text-slate-400 hover:text-purple-400 focus-visible:text-purple-400" target="_blank"
+              aria-label="Figm (opens in a new tab)">
+              Figma
+            </a>
+            and coded in
+            <a href="https://code.visualstudio.com/"
+              class="font-medium text-slate-400 hover:text-purple-400 focus-visible:text-purple-400" target="_blank"
+              aria-label="Visual Studio Code (opens in a new tab)">
+              Visual Studio Code
+            </a>
+            by yours truly. Built with
+            <a href="https://vuejs.org"
+              class="font-medium text-slate-400 hover:text-purple-400 focus-visible:text-purple-400"
+              aria-label="VueJs (opens in a new tab)" target="_blank">
+              Vue
+            </a>
+            and
+            <a href="https://tailwindcss.com/" aria-label="tailwind css (opens in a new tab)" target="_blank"
+              class="font-medium text-slate-400 hover:text-purple-400 focus-visible:text-purple-400">
+              Tailwind CSS
+            </a>
+            , deployed with Github Pages. All text is set in the
+            <a href="https://rsms.me/inter/"
+              class="font-medium text-slate-400 hover:text-purple-400 focus-visible:text-purple-400"
+              aria-label="inter typeface (opens in new tab)" target="_blank">
+              Inter typeface.
+            </a>
+          </span>
+        </footer>
       </div>
     </div>
   </section>

@@ -1,10 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import HomePage from './components/HomePage.vue';
+import HelloWorld from './components/HomePage.vue'
 
 </script>
 
 <template class="h-full body-bg ">
-  <HelloWorld />
+  <HomePage />
 </template>
 
 <style scoped>
