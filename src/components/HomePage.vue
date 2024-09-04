@@ -42,7 +42,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
     },
   }" class=" h-screen w-screen md:px-12 px-4 lg:px-24 lg:flex selection:bg-cyan-300 text-white
     selection:text-cyan-900 lg:gap-4 tracking-wide">
-    <div class=" lg:px-15 lg:sticky lg:top-0 w-full lg:h-10 lg:pt-20 lg:pb-20 pb-0 pt-10 ">
+    <div class=" lg:px-15 lg:sticky lg:top-0 lg:w-dvw lg:h-10 lg:pt-20 lg:pb-20 pb-0 pt-10 ">
 
       <div class="h-40 lg:h-auto">
         <section class=" text-5xl mb-5 font-bold">
@@ -178,10 +178,10 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4 grid-cols-2 max-w-full flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4 flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
-                <img class=" h-40 lg:h-16 lg:pe-3 lg:w-36 w-52 pb-3 lg:pb-0"
-                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280336417490210897/Screenshot_2024-08-29_at_11.55.46_PM.png?ex=66d7b5b5&is=66d66435&hm=7153dfbb6ec816328d38cf2cec3018206ac282402369d9dbadb825e58afdc698&"
+                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0"
+                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280336417490210897/Screenshot_2024-08-29_at_11.55.46_PM.png?ex=66d9aff5&is=66d85e75&hm=a45aa624f97e92aa8f96d23f1b6ad24b5dae82c6ce0180b082e76c468ace925b&"
                   alt="">
                 <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://keepr.evanvarozza.dev/#/">
@@ -218,12 +218,51 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4 grid-cols-2 flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4  flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
-                <img class=" h-40 lg:h-16 lg:pe-3 lg:w-36 w-52 pb-3 lg:pb-0"
-                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280375898155126784/Screenshot_2024-09-02_at_9.55.52_PM.png?ex=66d7da7a&is=66d688fa&hm=11484f113e48d95cbde797784ea4451f5aafe121b12da07cc5a99413469da105&"
+                <img class=" h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0"
+                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280643431844020295/Screenshot_2024-09-03_at_3.39.04_PM.png?ex=66d8d3a3&is=66d78223&hm=9555b3fa7723ca7d9941fcb411b2210cc557a5f6236c663e8e3ebacf5640d682&"
                   alt="">
-                <div class="flex flex-col w-5/6">
+                <div class="flex flex-col w-full">
+                  <a class="lg:cursor-pointer" href="https://tower.evanvarozza.dev/#/">
+                    <p class="flex mt-2">Tower<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor"
+                        class="size-4 mt-1 ms-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg></p>
+                  </a>
+                  <p class="text-slate-400 pe-2">Tower simplifies event planning with an intuitive platform for
+                    creating, managing, and promoting events. Enjoy features like customizable pages, easy RSVP
+                    tracking, and real-time analytics to ensure your event’s success. Elevate your event experience with
+                    Tower.
+                  </p>
+                  <div class="flex my-3">
+                    <span
+                      class="bg-green-100  text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-11">Vue</span>
+                    <span
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-18">NodeJS</span>
+                    <span
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-15">MongoDB</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li v-motion :initial="{
+              opacity: 0,
+              y: 100,
+            }" :visible="{
+              opacity: 1,
+              y: 0,
+            }">
+
+              <div
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4  flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white  lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+
+                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0"
+                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280375898155126784/Screenshot_2024-09-02_at_9.55.52_PM.png?ex=66d92bfa&is=66d7da7a&hm=2e11fa40edba65528f1d11f927e3568782a15dd2b7687b4e0530ea2266d11855&"
+                  alt="">
+                <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://varozzaej.github.io/jot/">
                     <p class="flex mt-2">Jot<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor"
@@ -257,12 +296,12 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm  hover:blur-none   gap-4 grid-cols-2 flex-col-reverse ps-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white md:max-w-xl lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm  hover:blur-none   gap-4 flex-col-reverse ps-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white lg:flex-row">
 
-                <img class=" h-40 lg:h-16 lg:pe-3 lg:w-36 w-52 pb-3 lg:pb-0"
-                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280376292600184882/Screenshot_2024-09-02_at_9.58.04_PM.png?ex=66d7dad8&is=66d68958&hm=c56f14c415368717c5cb12863739b1af88a2b613b4ec087067506756e4959841&"
+                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0"
+                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280376292600184882/Screenshot_2024-09-02_at_9.58.04_PM.png?ex=66d92c58&is=66d7dad8&hm=f65f61d5941e75c137ad71b443b1856ce99db60d6d0352a1b9cfe30abe1d196e&"
                   alt="">
-                <div class="flex flex-col w-5/6">
+                <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://boisepetworks.org/#/">
 
                     <p class="flex mt-2">Petworks<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -297,12 +336,12 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm  hover:blur-none   gap-4 grid-cols-2 flex-col-reverse ps-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white md:max-w-xl lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm  hover:blur-none  gap-4  flex-col-reverse ps-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white lg:flex-row">
 
-                <img class=" h-40 lg:h-16 lg:pe-3 lg:w-36 w-52 pb-3 lg:pb-0"
-                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280375899010629704/Screenshot_2024-09-02_at_9.56.11_PM.png?ex=66d7da7a&is=66d688fa&hm=f782e99b6ab1a5b6d6190eeb1ab2b742747fb47e19cae7f3e2f989a47bd00c14&"
+                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0"
+                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280375899010629704/Screenshot_2024-09-02_at_9.56.11_PM.png?ex=66d92bfa&is=66d7da7a&hm=e01af7bceab236ebd855b7a03d76c508c45ab7b5080a166f24abdef1cfe6ef11&"
                   alt="">
-                <div class="flex flex-col w-5/6">
+                <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://varozzaej.github.io/">
 
                     <p class="flex mt-2">Balloon Pop<svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -315,8 +354,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
                   <p class="text-slate-400 pe-2">Balloon Pop is a fast-paced, addictive web app where the goal is
                     simple: pop
                     as many balloons as you can before time runs out! Test your reflexes and see how quickly you can
-                    burst colorful balloons in this fun and challenging game. Perfect for quick breaks or competitive
-                    fun with friends—can you top the leaderboard?
+                    burst colorful balloons in this fun and challenging game.
                   </p>
                   <div class="flex my-3">
                     <span
@@ -333,7 +371,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
           </ol>
 
         </div>
-        <footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+        <footer class="max-w-md lg:pb-16 text-sm text-slate-500 pb-0">
           <span class="">Loosely designed in
             <a href="https://figma.com"
               class="font-medium text-slate-400 hover:text-purple-400 focus-visible:text-purple-400" target="_blank"
