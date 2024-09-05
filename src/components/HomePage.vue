@@ -180,9 +180,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
               <div
                 class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4 flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
-                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0"
-                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280336417490210897/Screenshot_2024-08-29_at_11.55.46_PM.png?ex=66d9aff5&is=66d85e75&hm=a45aa624f97e92aa8f96d23f1b6ad24b5dae82c6ce0180b082e76c468ace925b&"
-                  alt="">
+                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0" src="/src/components/keepr.png" alt="">
                 <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://keepr.evanvarozza.dev/#/">
                     <p class="flex mt-2">Keepr <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -220,9 +218,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
               <div
                 class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4  flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
-                <img class=" h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0"
-                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280643431844020295/Screenshot_2024-09-03_at_3.39.04_PM.png?ex=66d8d3a3&is=66d78223&hm=9555b3fa7723ca7d9941fcb411b2210cc557a5f6236c663e8e3ebacf5640d682&"
-                  alt="">
+                <img class=" h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0" src="/src/components/tower.png" alt="">
                 <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://tower.evanvarozza.dev/#/">
                     <p class="flex mt-2">Tower<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -259,9 +255,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
               <div
                 class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4  flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white  lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
-                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0"
-                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280375898155126784/Screenshot_2024-09-02_at_9.55.52_PM.png?ex=66d92bfa&is=66d7da7a&hm=2e11fa40edba65528f1d11f927e3568782a15dd2b7687b4e0530ea2266d11855&"
-                  alt="">
+                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0" src="/src/components/jot.png" alt="">
                 <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://varozzaej.github.io/jot/">
                     <p class="flex mt-2">Jot<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -298,9 +292,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
               <div
                 class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm  hover:blur-none   gap-4 flex-col-reverse ps-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white lg:flex-row">
 
-                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0"
-                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280376292600184882/Screenshot_2024-09-02_at_9.58.04_PM.png?ex=66d92c58&is=66d7dad8&hm=f65f61d5941e75c137ad71b443b1856ce99db60d6d0352a1b9cfe30abe1d196e&"
-                  alt="">
+                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0" src="/src/components/petworks.png" alt="">
                 <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://boisepetworks.org/#/">
 
@@ -338,9 +330,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
               <div
                 class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm  hover:blur-none  gap-4  flex-col-reverse ps-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white lg:flex-row">
 
-                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0"
-                  src="https://cdn.discordapp.com/attachments/1130957592240332851/1280375899010629704/Screenshot_2024-09-02_at_9.56.11_PM.png?ex=66d92bfa&is=66d7da7a&hm=e01af7bceab236ebd855b7a03d76c508c45ab7b5080a166f24abdef1cfe6ef11&"
-                  alt="">
+                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0" src="/src/components/balloonpop.png" alt="">
                 <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://varozzaej.github.io/">
 
