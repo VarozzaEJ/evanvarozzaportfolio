@@ -253,6 +253,42 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4  flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+
+                <img class=" h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0" src="/src/components/SkyPulse.png" alt="">
+                <div class="flex flex-col w-full">
+                  <a class="lg:cursor-pointer" href="https://skypulse-one.vercel.app/">
+                    <p class="flex mt-2">SkyPulse<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor"
+                        class="size-4 mt-1 ms-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg></p>
+                  </a>
+                  <p class="text-slate-400 pe-2">Sky Pulse is a lightweight Weather app using Open-Meteo's and Open
+                    Weather's forecast API's. This project was built in React 18, it incorporates use with many
+                    different packages including Framer Motion, Bootstrap, and Axios.
+                  </p>
+                  <div class="flex my-3">
+                    <span
+                      class="bg-green-100  text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-18">React</span>
+                    <span
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-18">Axios</span>
+                    <span
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-15">Bootstrap</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li v-motion :initial="{
+              opacity: 0,
+              y: 100,
+            }" :visible="{
+              opacity: 1,
+              y: 0,
+            }">
+
+              <div
                 class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4  flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white  lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
                 <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:pb-0" src="/src/components/jot.png" alt="">
