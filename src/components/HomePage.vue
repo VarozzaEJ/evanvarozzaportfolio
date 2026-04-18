@@ -159,7 +159,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             date="October 2025 — Present" />
 
         </div>
-        <a class="lg:cursor-pointer" href="https://keepr.evanvarozza.dev/#/">
+        <a class="lg:cursor-pointer" href="/Evan-Varozza-Resume.pdf" download="Evan-Varozza-Resume.pdf">
           <p
             class="inline-flex mb-5 items-baseline font-medium leading-tight text-slate-200 hover:text-purple-300 focus-visible:text-purple-300 group/link text-base">
             View Full Résumé <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
