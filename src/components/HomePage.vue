@@ -1,9 +1,16 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import ExperienceCard from './ExperienceCard.vue'
 
 const x = ref(50)
 const y = ref(0)
+const shotByNortonImage = new URL('./Screenshot 2026-04-18 at 10.04.36 AM.png', import.meta.url).href
+const goldCountryKennelImage = new URL('./Screenshot 2026-04-18 at 10.29.02 AM.png', import.meta.url).href
+const skyPulseImage = new URL('./SkyPulse.png', import.meta.url).href
+const jotImage = new URL('./jot.png', import.meta.url).href
+const balloonPopImage = new URL('./balloonpop.png', import.meta.url).href
 
+/** @param {MouseEvent} event */
 function update(event) {
   x.value = event.pageX
   y.value = event.pageY
@@ -61,15 +68,15 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
         <div class="flex flex-col invisible lg:visible">
           <a class="group flex items-center py-3 " href="#about"><span
               class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
-              class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
+              class="nav-text text-md font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
           </a>
-          <!-- <a class="group flex items-center py-3 " href="#experience"><span
+          <a class="group flex items-center py-3 " href="#experience"><span
               class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
-              class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span>
-          </a> -->
+              class="nav-text text-md font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span>
+          </a>
           <a class="group flex items-center py-3 " href="#projects"><span
               class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
-              class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
+              class="nav-text text-md font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
           </a>
 
         </div>
@@ -144,28 +151,23 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
         </span>
         . Let’s build something amazing together!
       </p>
-      <div class="lg:px-15 mt-20">
-        <!-- <p id="experience" class="lg:hidden text-slate-100 mb-5">Experience</p> -->
-        <!-- <div v-motion :initial="{
-          opacity: 0,
-          y: 100,
-        }" :visible="{
-          opacity: 1,
-          y: 0,
-        }"
-          class="flex hover:bg-slate-50/10 lg:cursor-pointer flex-col rounded-lg bg-slate-900 text-surface  shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl md:flex-row">
-          <p class="text-slate-400 ps-6 lg:ps-0">August 2024</p>
-          <div class="flex flex-col justify-start p-6">
-            <h5 class="mb-2 text-xl font-medium cursor-pointer hover:text-purple-400">Card title</h5>
-            <p class="mb-4 text-base">
-              This is a wider card with supporting text below as a natural lead-in
-              to additional content. This content is a little bit longer.
-            </p>
-            <p class="text-xs text-surface/75 dark:text-neutral-300">
-              Last updated 3 mins ago
-            </p>
-          </div>
-        </div> -->
+      <div id="experience" class="lg:px-15 mt-20">
+        <p class="lg:hidden text-slate-100 mb-5">Experience</p>
+        <div id="experienceCards" class="flex flex-col gap-6 lg:gap-8">
+          <ExperienceCard title="Freelance Web Developer"
+            description="Designed and developed custom websites for two small business clients — a photography business and a local family-owned dog breeding operation. Built each site to reflect the client's brand with a clean, professional look. The dog breeder's site in particular made a meaningful impact, significantly improving their client outreach and customer engagement."
+            date="October 2025 — Present" />
+
+        </div>
+        <a class="lg:cursor-pointer" href="https://keepr.evanvarozza.dev/#/">
+          <p
+            class="inline-flex mb-5 items-baseline font-medium leading-tight text-slate-200 hover:text-purple-300 focus-visible:text-purple-300 group/link text-base">
+            View Full Résumé <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor"
+              class="size-4 mt-1 ms-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg></p>
+        </a>
         <p class="lg:hidden text-slate-100 my-5">Projects</p>
         <div id="projects" class="">
           <ol class="">
@@ -178,14 +180,92 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4 flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none gap-4 flex-col-reverse items-start px-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
-                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:py-3" src="/src/components/keepr.png" alt="">
+                <img
+                  class="relative left-1/2 h-40 w-[calc(100vw-2rem)] max-w-none -translate-x-1/2 object-cover pb-3 lg:left-auto lg:h-32 lg:w-72 lg:translate-x-0 lg:pe-3 lg:py-3"
+                  :src="shotByNortonImage" alt="Shot By Norton">
+                <div class="flex flex-col w-full">
+                  <a class="lg:cursor-pointer" href="https://shot-by-norton.vercel.app/">
+                    <p class="flex mt-2">Shot By Norton <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="size-4 mt-1 ms-5 transition ease-in-out delay-0  group-hover:-translate-y-1 group-hover:scale-110">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg></p>
+                  </a>
+                  <p class="text-slate-400 pe-1">A photography portfolio site for a versatile photographer specializing
+                    in portrait work. Built to highlight his work with a clean, visually-driven layout that lets the
+                    photography take center stage.
+                  </p>
+                  <div class="flex my-3">
+                    <span
+                      class="bg-green-100  text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-15">Next.js</span>
+                    <span
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-22">TailwindCSS</span>
+                    <span
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-15">Web3Forms</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li v-motion :initial="{
+              opacity: 0,
+              y: 100,
+            }" :visible="{
+              opacity: 1,
+              y: 0,
+            }">
+
+              <div
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none gap-4 flex-col-reverse items-start px-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+
+                <img
+                  class="relative left-1/2 h-40 w-[calc(100vw-2rem)] max-w-none -translate-x-1/2 object-cover pb-3 lg:left-auto lg:h-32 lg:w-72 lg:translate-x-0 lg:pe-3 lg:py-3"
+                  :src="goldCountryKennelImage" alt="Gold Country Kennel">
+                <div class="flex flex-col w-full">
+                  <a class="lg:cursor-pointer" href="https://goldcountrykennel.com">
+                    <p class="flex mt-2">Gold Country Kennel <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="size-4 mt-1 ms-5 transition ease-in-out delay-0  group-hover:-translate-y-1 group-hover:scale-110">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg></p>
+                  </a>
+                  <p class="text-slate-400 pe-1">A business website for a German Shepherd breeder focused on
+                    expanding their outreach and connecting with potential clients. The site gave the business a
+                    professional online presence that meaningfully improved their client engagement.
+                  </p>
+                  <div class="flex my-3">
+                    <span
+                      class="bg-green-100  text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-15">WordPress</span>
+                    <span
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-22">HTML</span>
+                    <span
+                      class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 w-15">CSS</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- <li v-motion :initial="{
+              opacity: 0,
+              y: 100,
+            }" :visible="{
+              opacity: 1,
+              y: 0,
+            }">
+
+              <div
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none gap-4 flex-col-reverse items-start px-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+
+                <img
+                  class="relative left-1/2 h-40 w-[calc(100vw-2rem)] max-w-none -translate-x-1/2 object-cover pb-3 lg:left-auto lg:h-32 lg:w-72 lg:translate-x-0 lg:pe-3 lg:py-3"
+                  :src="keeprImage" alt="">
                 <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://keepr.evanvarozza.dev/#/">
                     <p class="flex mt-2">Keepr <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor"
-                        class="size-4 mt-1 ms-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
+                        class="size-4 mt-1 ms-5 transition ease-in-out delay-0  group-hover:-translate-y-1 group-hover:scale-110">
                         <path stroke-linecap="round" stroke-linejoin="round"
                           d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                       </svg></p>
@@ -206,8 +286,8 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
                   </div>
                 </div>
               </div>
-            </li>
-            <li v-motion :initial="{
+            </li> -->
+            <!-- <li v-motion :initial="{
               opacity: 0,
               y: 100,
             }" :visible="{
@@ -216,9 +296,11 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4  flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none gap-4 flex-col-reverse items-start px-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
-                <img class=" h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:py-3" src="/src/components/tower.png" alt="">
+                <img
+                  class="relative left-1/2 h-40 w-[calc(100vw-2rem)] max-w-none -translate-x-1/2 object-cover pb-3 lg:left-auto lg:h-32 lg:w-72 lg:translate-x-0 lg:pe-3 lg:py-3"
+                  :src="towerImage" alt="">
                 <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://tower.evanvarozza.dev/#/">
                     <p class="flex mt-2">Tower<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -243,7 +325,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
                   </div>
                 </div>
               </div>
-            </li>
+            </li> -->
             <li v-motion :initial="{
               opacity: 0,
               y: 100,
@@ -253,9 +335,11 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4  flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none gap-4 flex-col-reverse items-start px-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
-                <img class=" h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:py-3" src="/src/components/SkyPulse.png" alt="">
+                <img
+                  class="relative left-1/2 h-40 w-[calc(100vw-2rem)] max-w-none -translate-x-1/2 object-cover pb-3 lg:left-auto lg:h-32 lg:w-72 lg:translate-x-0 lg:pe-3 lg:py-3"
+                  :src="skyPulseImage" alt="Sky Puls">
                 <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://skypulse-one.vercel.app/">
                     <p class="flex mt-2">SkyPulse<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -289,9 +373,11 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none  gap-4  flex-col-reverse items-start ps-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white  lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none gap-4 flex-col-reverse items-start px-3 pt-2 lg:p-0 lg:ps-2 lg:items-center justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:flex-row">
 
-                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:py-3" src="/src/components/jot.png" alt="">
+                <img
+                  class="relative left-1/2 h-40 w-[calc(100vw-2rem)] max-w-none -translate-x-1/2 object-cover pb-3 lg:left-auto lg:h-32 lg:w-72 lg:translate-x-0 lg:pe-3 lg:py-3"
+                  :src="jotImage" alt="Jot">
                 <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://varozzaej.github.io/jot/">
                     <p class="flex mt-2">Jot<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -317,7 +403,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
                 </div>
               </div>
             </li>
-            <li v-motion :initial="{
+            <!-- <li v-motion :initial="{
               opacity: 0,
               y: 100,
             }" :visible="{
@@ -326,9 +412,11 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm  hover:blur-none   gap-4 flex-col-reverse ps-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none gap-4 flex-col-reverse px-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white lg:flex-row">
 
-                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:py-3" src="/src/components/petworks.png" alt="">
+                <img
+                  class="relative left-1/2 h-40 w-[calc(100vw-2rem)] max-w-none -translate-x-1/2 object-cover pb-3 lg:left-auto lg:h-32 lg:w-72 lg:translate-x-0 lg:pe-3 lg:py-3"
+                  :src="petworksImage" alt="">
                 <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://boisepetworks.org/#/">
 
@@ -354,7 +442,7 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
                   </div>
                 </div>
               </div>
-            </li>
+            </li> -->
             <li v-motion :initial="{
               opacity: 0,
               y: 100,
@@ -364,9 +452,11 @@ onUnmounted(() => window.removeEventListener('mousemove', update))
             }">
 
               <div
-                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm  hover:blur-none  gap-4  flex-col-reverse ps-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white lg:flex-row">
+                class="flex mb-5 hover:bg-slate-50/10 hover:text-purple-400 transition-all ease-in-out delay-0 hover:-translate-y-1 hover:backdrop-blur-sm hover:blur-none gap-4 flex-col-reverse px-3 pt-2 lg:p-0 lg:ps-2 items-start lg:items-center lg:hover:!opacity-100 lg:group-hover/list:opacity-50 justify-start md:justify-center rounded-lg bg-slate-900 text-surface shadow-secondary-1 dark:bg-surface-dark lg:-inset-x-6 lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:text-white lg:flex-row">
 
-                <img class="h-40 lg:h-32 lg:pe-3 lg:w-72 w-52 pb-3 lg:py-3" src="/src/components/balloonpop.png" alt="">
+                <img
+                  class="relative left-1/2 h-40 w-[calc(100vw-1rem)] max-w-none -translate-x-1/2 object-cover pb-3 lg:left-auto lg:h-32 lg:w-72 lg:translate-x-0 lg:pe-3 lg:py-3"
+                  :src="balloonPopImage" alt="Balloon Pop">
                 <div class="flex flex-col w-full">
                   <a class="lg:cursor-pointer" href="https://varozzaej.github.io/">
 
